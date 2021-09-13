@@ -6,12 +6,6 @@ import { validateInput } from './validate-input.js';
 const constellationForm = document.querySelector('#constellation-form');
 const choiceAlert = document.getElementById('choice-alert');
 
-// function hideDOMElements() {
-//     console.log(arguments[0]);
-//     arguments.style.display = 'hidden';
-    
-
-
 constellationForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -35,10 +29,5 @@ constellationForm.addEventListener('submit', (e) => {
     choiceAlert.textContent = responseArray.results;
     choiceAlert.style.display = 'inline';
 
-
-    
-        
-    // add set timeout here
-
-    setTimeout(function(){window.location = '../sky-selection-page/';}, 3000);
+    setTimeout(function(){window.location = '../sky-selection-page/';}, 3500);
 });
